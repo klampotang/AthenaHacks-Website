@@ -1,0 +1,533 @@
+/* Import Fonts */
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400";
+@font-face {
+  font-family: Ardina;
+  src: url("../data/Ardina-Regular.otf"); }
+@-ms-viewport {
+  width: device-width; }
+/* Variables */
+html {
+  background-color: #b6e5ff;
+  height: 100%; }
+
+body {
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-weight: 300;
+  height: 100%;
+  font-size: 18px; }
+
+.overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  position: relative; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1); }
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .navbar li {
+    display: inline-block;
+    width: 100px; }
+  .navbar a {
+    display: inline-block; }
+  .navbar .nav-title {
+    font-family: Ardina, sans-serif;
+    color: white;
+    padding: 0 10px;
+    font-size: 30px;
+    line-height: 60px; }
+  .navbar .nav-link {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+    line-height: 60px;
+    padding: 0 10px;
+    height: 100%; }
+  .navbar .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.15); }
+  @media (max-width: 820px) {
+    .navbar li {
+      display: none; } }
+
+/* default style */
+.selectnav {
+  display: none; }
+
+/* small screen */
+@media screen and (max-width: 600px) {
+  .js #nav {
+    display: none; }
+
+  .js .selectnav {
+    display: block; } }
+.intro {
+  padding-top: 40px;
+  background-image: linear-gradient(#FA8297, rgba(250, 130, 151, 0));
+  min-height: 400px;
+  height: 100%;
+  display: flex; }
+  .intro h1 {
+    font-family: Ardina, sans-serif;
+    font-size: 60px; }
+  .intro h2 {
+    font-size: 30px; }
+  .intro .main-header {
+    text-align: center;
+    z-index: 100; }
+  .intro #logo {
+    display: inline-block;
+    height: 200px;
+    width: 200px; }
+
+.about {
+  text-align: justify;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black; }
+  .about .text {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    position: relative; }
+  .about .heavy {
+    font-weight: 400; }
+  .about .circle-one {
+    margin-top: 10px;
+    border-radius: 110px;
+    padding: 10px;
+    background-color: white;
+    position: relative; }
+  .about .header .circle {
+    font-size: 50px;
+    color: #b6e5ff; }
+  .about .aside {
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 5px;
+    text-align: center; }
+  .about .aside {
+    width: 200px;
+    height: 60px;
+    background: #fff;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    position: relative;
+    margin-top: 100px; }
+  .about .aside:before, .about .aside:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    z-index: -1; }
+  .about .aside:after {
+    width: 120px;
+    height: 120px;
+    top: -55px;
+    left: auto;
+    right: 15px; }
+
+.info {
+  margin-top: 100px;
+  color: black;
+  text-align: center; }
+  .info p {
+    padding: 50px 0; }
+  .info .fire-image {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-image: url("../images/flame.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .info .hands-image {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-image: url("../images/hands.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .info .flower-image {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-image: url("../images/flowers.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .info .trees {
+    position: relative;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 200px; }
+    .info .trees .tree1 {
+      height: 170px;
+      width: 150px;
+      background-image: url("../images/palm-tree.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 10%;
+      bottom: -10px; }
+    .info .trees .tree2 {
+      height: 150px;
+      width: 125px;
+      background-image: url("../images/palm-tree.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 25%;
+      bottom: -10px; }
+    .info .trees .tree3 {
+      height: 150px;
+      width: 125px;
+      background-image: url("../images/palm-tree.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 70%;
+      bottom: -10px; }
+    .info .trees .tree4 {
+      height: 175px;
+      width: 145px;
+      background-image: url("../images/palm-tree.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 80%;
+      bottom: -10px; }
+  .info .six .columns {
+    background-image: url("../images/cloud1.png");
+    background-size: contain;
+    background-position: center; }
+
+.attend {
+  min-height: 500px;
+  text-align: center;
+  padding-top: 200px;
+  background-color: #FFB6C2; }
+  .attend .circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    font-size: 20px;
+    transition: all .3s ease; }
+  .attend .circle:hover {
+    background-color: #eee;
+    background-color: #fff;
+    color: #FFB6C2; }
+  .attend .waves {
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/waves.png");
+    background-repeat: repeat;
+    background-size: contain;
+    margin-bottom: -50px; }
+
+.faq {
+  background-color: #F9CBBC;
+  color: black; }
+  .faq h3 {
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0; }
+  .faq p {
+    margin-bottom: 20px; }
+  .faq .beach-images {
+    height: 200px;
+    width: 100%;
+    position: relative; }
+    .faq .beach-images .volleyball {
+      height: 300px;
+      width: 255px;
+      background-image: url("../images/beachvolleyball.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 10px;
+      bottom: -35px; }
+    .faq .beach-images .volleyball {
+      height: 200px;
+      width: 170px;
+      background-image: url("../images/beachvolleyball.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 10%;
+      bottom: -35px; }
+    .faq .beach-images .beach-chair {
+      height: 200px;
+      width: 170px;
+      background-image: url("../images/beach-char.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 10%;
+      bottom: -35px; }
+  .faq .more-questions {
+    text-align: center; }
+    .faq .more-questions .box {
+      display: inline-block;
+      background-color: white;
+      width: 200px;
+      margin-top: 10px;
+      border-radius: 10px;
+      padding: 10px; }
+      .faq .more-questions .box a {
+        text-decoration: none;
+        color: black; }
+
+.prizes {
+  background-color: #FFB6C2; }
+  .prizes .header .circle {
+    color: #FFB6C2;
+    font-size: 50px; }
+  .prizes .prize-titles h3 {
+    font-size: 30px; }
+  .prizes .image-holder .prize-image {
+    height: 400px;
+    background-image: url("../images/prizes.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-bottom: -30px; }
+
+.sponsors {
+  text-align: center; }
+  .sponsors .header .circle {
+    color: #b6e5ff;
+    font-size: 35px; }
+  .sponsors .team {
+    text-align: center;
+    margin-bottom: 100px; }
+    .sponsors .team .names h1 {
+      font-size: 30px;
+      margin: 0; }
+  .sponsors .sponsor-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .sponsors .sponsor-images img {
+      max-width: 200px;
+      padding: 20px; }
+  .sponsors .blackstone {
+    height: 100px;
+    width: 200px;
+    padding: 40px;
+    display: inline-block;
+    background-image: url("../images/blackstoneLP.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.header {
+  text-align: center; }
+  .header .circle {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #fff;
+    color: #F9CBBC;
+    line-height: 150px;
+    font-size: 60px;
+    transition: all .3s ease; }
+
+.footer {
+  min-height: 150px;
+  padding-top: 60px;
+  background-image: linear-gradient(rgba(250, 130, 151, 0), #FA8297);
+  text-align: center; }
+  .footer p {
+    font-size: 18px; }
+  .footer .fun-fact {
+    height: 150px;
+    margin-bottom: 50px; }
+  .footer .social {
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+    .footer .social a {
+      color: white;
+      text-decoration: none; }
+    .footer .social span {
+      padding: 0 15px; }
+    .footer .social span:hover {
+      color: black;
+      transition: all .3s ease; }
+    .footer .social i {
+      padding: 0 15px;
+      transition: all .3s ease; }
+    .footer .social i:hover {
+      color: black; }
+  @media (max-width: 820px) {
+    .footer span {
+      display: none; } }
+
+/*
+* Clouds
+*/
+/*Lets start with the cloud formation rather*/
+/*The container will also serve as the SKY*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Time to finalise the cloud shape*/
+.clouds {
+  position: absolute;
+  margin-top: 200px; }
+
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: relative; }
+
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg); }
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px; }
+
+/*Time to animate*/
+.x1 {
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite; }
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+  left: 200px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6;
+  /*opacity proportional to the size*/
+  /*Speed will also be proportional to the size and opacity*/
+  /*More the speed. Less the time in 's' = seconds*/
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite; }
+
+.x3 {
+  left: -250px;
+  top: -200px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite; }
+
+.x4 {
+  left: 470px;
+  top: -250px;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 18s linear infinite;
+  -moz-animation: moveclouds 18s linear infinite;
+  -o-animation: moveclouds 18s linear infinite; }
+
+.x5 {
+  left: -150px;
+  top: -150px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite; }
+
+@-webkit-keyframes moveclouds {
+  0% {
+    margin-left: 1000px; }
+  100% {
+    margin-left: -1000px; } }
+@-moz-keyframes moveclouds {
+  0% {
+    margin-left: 1000px; }
+  100% {
+    margin-left: -1000px; } }
+@-o-keyframes moveclouds {
+  0% {
+    margin-left: 1000px; }
+  100% {
+    margin-left: -1000px; } }
+
+/*# sourceMappingURL=custom.css.map */
