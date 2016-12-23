@@ -217,6 +217,10 @@ body {
         width: 120px; height: 120px;
         top: -55px; left: auto; right: 15px;
     }
+
+    .row {
+        text-align: center;
+    }
 }
 
 .info {
@@ -352,6 +356,7 @@ body {
         line-height: 100px;
         font-size: 20px;
         transition: all .3s ease;
+        margin-bottom: 150px;
     }
 
     .circle:hover {
@@ -361,12 +366,50 @@ body {
     }
 
     .waves {
-        height: 200px;
+        height: 100px;
         width: 100%;
-        background-image: url("../images/waves.png");
-        background-repeat: repeat;
+        background-image: url("../images/wave.png");
+        background-repeat: repeat-x;
+        background-size: contain;
+        margin-bottom: -100px;
+    }
+
+    .waves2 {
+        height: 100px;
+        width: 100%;
+        position: relative;
+        background-image: url("../images/wave.png");
+        background-repeat: repeat-x;
         background-size: contain;
         margin-bottom: -50px;
+        -webkit-animation-name: leftright;
+        animation-name: leftright;
+        -webkit-animation-duration: 3s;
+        animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        opacity: 0.7;
+    }
+
+    @-webkit-keyframes leftright {
+        0% {
+            margin-left: 10px;
+        }
+        100% {
+            margin-left: 40px;
+        }
+    }
+
+    @keyframes changewidth {
+      0% {
+        margin-left: 0;
+      }
+
+      100% {
+        margin-left: 20px;
+      }
     }
 }
 

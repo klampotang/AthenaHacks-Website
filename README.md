@@ -1,1 +1,0 @@
-Original v1 website code was kindly done by Alex Pareto and the AthenaHacks team has been building off of it since then! Thank you so much Alex! 
