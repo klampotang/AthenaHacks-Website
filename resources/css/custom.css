@@ -409,12 +409,22 @@ body {
   .sponsors .blackstone {
     height: 100px;
     width: 200px;
-    padding: 40px;
+    padding: 60px;
     display: inline-block;
     background-image: url("../images/blackstoneLP.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; }
+  .sponsors .challengerocket {
+    height: 100px;
+    width: 200px;
+    padding: 60px;
+    display: inline-block;
+    background-image: url("../images/ChallengeRockettransparent.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+
 
 .header {
   text-align: center;
