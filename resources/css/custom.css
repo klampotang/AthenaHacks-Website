@@ -88,6 +88,25 @@ body {
     display: inline-block;
     height: 200px;
     width: 200px; }
+    .intro .circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    font-size: 20px;
+    transition: all .3s ease;
+    margin-bottom: 150px; }
+    .intro.circle:hover {
+    background-color: #eee;
+    background-color: #fff;
+    color: #FFB6C2; }
 
 .about {
   text-align: justify;
@@ -256,6 +275,8 @@ body {
     width: 100px;
     height: 100px;
     margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 50%;
     border: 1px solid #fff;
     text-align: center;
