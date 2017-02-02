@@ -447,6 +447,16 @@ body {
     background-position: center;
     background-repeat: no-repeat; }
 
+  .sponsors .hackerfund {
+    height: 100px;
+    width: 200px;
+    padding: 60px;
+    display: inline-block;
+    background-image: url("../images/hackerfund.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+
 
 .header {
   text-align: center;
