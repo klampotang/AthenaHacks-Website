@@ -77,6 +77,7 @@ body {
   align-items: center;
   justify-content: center; }
   .intro h1 {
+    padding-top: 20%;
     font-family: Ardina, sans-serif;
     font-size: 60px; }
   .intro h2 {
@@ -266,7 +267,7 @@ body {
       margin-bottom: 0; }
 
 .attend {
-  min-height: 500px;
+  height: 270px;
   text-align: center;
   padding-top: 200px;
   background-color: #FFB6C2; }
@@ -442,6 +443,25 @@ body {
     padding: 60px;
     display: inline-block;
     background-image: url("../images/ChallengeRockettransparent.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+  .sponsors .hackerfund {
+    height: 100px;
+    width: 200px;
+    padding: 60px;
+    display: inline-block;
+    background-image: url("../images/hackerfund.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .sponsors .p8thlight {
+    height: 100px;
+    width: 200px;
+    padding: 60px;
+    display: inline-block;
+    background-image: url("../images/8thLight.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; }
