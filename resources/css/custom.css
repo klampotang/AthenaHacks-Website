@@ -678,3 +678,20 @@ body {
     margin-left: -1000px; } }
 
 /*# sourceMappingURL=custom.css.map */
+
+.schedule .header .circle {
+  color: #b6e5ff;
+  font-size: 40px;
+}
+
+.schedule .table {
+  width: 100%;
+}
+
+th,td {
+  text-align: center;
+}
+
+#day-tag {
+  font-size: 50px;
+}
