@@ -392,9 +392,14 @@ body {
     color: #FFB6C2;
     font-size: 50px; }
   .prizes .prize-titles h3 {
-    font-size: 18px; }
+    font-size: 22px; }
+  .prizes .prize-inner {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+  }
   .prizes .image-holder .prize-image {
-    height: 400px;
+    height: 500px;
     background-image: url("../images/prizes.png");
     background-size: contain;
     background-position: center;
@@ -673,3 +678,20 @@ body {
     margin-left: -1000px; } }
 
 /*# sourceMappingURL=custom.css.map */
+
+.schedule .header .circle {
+  color: #b6e5ff;
+  font-size: 40px;
+}
+
+.schedule .table {
+  width: 100%;
+}
+
+th,td {
+  text-align: center;
+}
+
+#day-tag {
+  font-size: 50px;
+}
