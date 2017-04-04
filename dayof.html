@@ -6,6 +6,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>AthenaHacks</title>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- this should fix FB when you post the link -->
   <meta property="og:image" content="http://imgur.com/a/gIR3O" />
   <meta property="og:description" content="AthenaHacks - Southern California's premier all-female hackathon!" />
@@ -54,17 +57,119 @@
 <nav class="navbar">
   <ul>
     <a class="nav-title" href="index.html">
-      AthenaHacks
+      AthenaHacks Live
     </a>
   </ul>
 </nav>
+
+<div class=countdown>
+  <!-- Display the countdown timer in an element -->
+  <h1>Time Remaining</h1>
+  <div id="clockdiv">
+    <div>
+      <span class="days"></span>
+      <div class="smalltext">Days</div>
+    </div>
+    <div>
+      <span class="hours"></span>
+      <div class="smalltext">Hours</div>
+    </div>
+    <div>
+      <span class="minutes"></span>
+      <div class="smalltext">Minutes</div>
+    </div>
+    <div>
+      <span class="seconds"></span>
+      <div class="smalltext">Seconds</div>
+    </div>
+  </div>
+  <script>
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(endtime) - Date.parse(new Date());
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector('.days');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date("April 9, 2017 11:00:00");
+    initializeClock('clockdiv', deadline);
+  </script>
+</div>
+
+<div class="information">
+  <div class="announcement">
+    <h2>Announcements</h2>
+    <p> Opening ceremony! Closing ceremony! Lots of information. </p>
+  </div>
+</div>
+
+<div class="links">
+  <table>
+    <tr>
+      <th><i class="fa fa-gears"></i>Hackpacks</th>
+      <th><i class="fa fa-folder"></i>Devpost</th>
+      <th><i class="fa fa-question-circle"></i>FAQs</th>
+      <th><i class="fa fa-map-marker"></i>Map</th>
+    </tr>
+  </table>
+</div>
 
 <div class="schedule">
   <div class="cd-schedule loading">
   	<div class="timeline">
   		<ul>
-  			<li><span>09:00</span></li>
-  			<li><span>09:30</span></li>
+        <li><span>12:00</span></li>
+        <li><span>12:30</span></li>
+        <li><span>1:00</span></li>
+        <li><span>1:30</span></li>
+        <li><span>2:00</span></li>
+        <li><span>2:30</span></li>
+        <li><span>3:00</span></li>
+        <li><span>3:30</span></li>
+        <li><span>4:00</span></li>
+        <li><span>4:30</span></li>
+        <li><span>5:00</span></li>
+        <li><span>5:30</span></li>
+        <li><span>6:00</span></li>
+        <li><span>6:30</span></li>
+        <li><span>7:00</span></li>
+        <li><span>7:30</span></li>
+        <li><span>8:00</span></li>
+        <li><span>8:30</span></li>
+  			<li><span>9:00</span></li>
+  			<li><span>9:30</span></li>
   			<li><span>10:00</span></li>
   			<li><span>10:30</span></li>
   			<li><span>11:00</span></li>
@@ -82,6 +187,17 @@
   			<li><span>17:00</span></li>
   			<li><span>17:30</span></li>
   			<li><span>18:00</span></li>
+        <li><span>18:30</span></li>
+        <li><span>19:00</span></li>
+        <li><span>19:30</span></li>
+        <li><span>20:00</span></li>
+        <li><span>20:30</span></li>
+        <li><span>21:00</span></li>
+        <li><span>21:30</span></li>
+        <li><span>22:00</span></li>
+        <li><span>22:30</span></li>
+        <li><span>23:00</span></li>
+        <li><span>23:30</span></li>
   		</ul>
   	</div> <!-- .timeline -->
 
@@ -91,27 +207,9 @@
   				<div class="top-info"><span>Saturday</span></div>
 
   				<ul>
-  					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
+  					<li class="single-event" data-start="11:30" data-end="12:30" data-content="event-abs-circuit" data-event="event-1" class="overlap">
   						<a href="#0">
-  							<em class="event-name">Abs Circuit1</em>
-  						</a>
-  					</li>
-
-            <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1.2">
-              <a href="#0">
-                <em class="event-name">Abs Circuit2</em>
-              </a>
-            </li>
-
-  					<li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2">
-  						<a href="#0">
-  							<em class="event-name">Rowing Workout</em>
-  						</a>
-  					</li>
-
-  					<li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3">
-  						<a href="#0">
-  							<em class="event-name">Yoga Level 1</em>
+  							<em class="event-name">Abs Circuit 1</em>
   						</a>
   					</li>
   				</ul>
@@ -121,29 +219,12 @@
   				<div class="top-info"><span>Sunday</span></div>
 
   				<ul>
-  					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
+  					<li class="single-event" data-start="12:00" data-end="13:00"  data-content="event-rowing-workout" data-event="event-2">
   						<a href="#0">
   							<em class="event-name">Rowing Workout</em>
   						</a>
   					</li>
 
-  					<li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
-  						<a href="#0">
-  							<em class="event-name">Restorative Yoga</em>
-  						</a>
-  					</li>
-
-  					<li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
-  						<a href="#0">
-  							<em class="event-name">Abs Circuit</em>
-  						</a>
-  					</li>
-
-  					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
-  						<a href="#0">
-  							<em class="event-name">Yoga Level 1</em>
-  						</a>
-  					</li>
   				</ul>
   			</li>
 
