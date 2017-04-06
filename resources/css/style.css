@@ -1,0 +1,195 @@
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Arvo', serif;
+  color: #222222;
+  background-color: #c6e2ff;
+}
+
+a {
+  color: #778899;;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #778899;
+}
+
+h1 {
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+  color: #ff6666;
+}
+
+h2 {
+  color: #396;
+  font-weight: 100;
+  font-size: 20px;
+  color: #ff6666;
+  margin-bottom: 5px;
+}
+
+li {
+  color: #396;
+  font-weight: 100;
+  font-size: 20px;
+  color: #ff6666;
+}
+
+/* --------------------------------
+
+Main Components
+
+-------------------------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1); }
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .navbar li {
+    display: inline-block;
+    width: 100px; }
+  .navbar a {
+    display: inline-block; }
+  .navbar .nav-title {
+    text-decoration: none;
+    font-family: Ardina, sans-serif;
+    color: white;
+    padding: 0 10px;
+    font-size: 30px;
+    line-height: 60px;
+    z-index: 2000; }
+    .navbar .nav-title h1 {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .navbar .nav-link{
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+    line-height: 60px;
+    padding: 0 10px;
+    height: 100%; }
+  .navbar .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.15); }
+  @media (max-width: 820px) {
+    .navbar li {
+      display: none; } }
+
+.countdown {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#clockdiv{
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+  font-family: 'Arvo', serif;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #ffc3a0;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #ff6666;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+.announcement {
+  margin: auto;
+  width: 50%;
+  height: 25%;
+  padding: 2%;
+  color: #444;
+  border: 2px solid #add5ff;
+  background-color: #f9f9f9;
+  overflow: scroll;
+  margin-bottom: 5%;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+  table-layout: fixed;
+  width: 75%;
+}
+
+th {
+  height: 50px;
+  text-align: center;
+  color: #778899;
+}
+
+.links {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 5%;
+}
+
+i {
+  cursor: pointer;
+}
+
+.schedule .header .circle {
+  color: #b6e5ff;
+  font-size: 40px;
+}
+
+.schedule .table {
+  width: 100%;
+}
+
+.table-bordered tr {
+  border-bottom: 2px solid white;
+  height: 75px;
+}
+
+th {
+  vertical-align: middle;
+}
+
+#day-tag {
+  font-size: 50px;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #FFB6C2;
+}
