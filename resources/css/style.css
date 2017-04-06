@@ -105,12 +105,6 @@ Main Components
   margin-bottom: 5%;
 }
 
-.information {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
 #clockdiv{
 	color: #fff;
 	display: inline-block;
@@ -140,10 +134,15 @@ Main Components
 }
 
 .announcement {
-  padding: 5%;
+  margin: auto;
+  width: 50%;
+  height: 25%;
+  padding: 2%;
   color: #444;
   border: 2px solid #add5ff;
   background-color: #f9f9f9;
+  overflow: scroll;
+  margin-bottom: 5%;
 }
 
 table {
@@ -168,4 +167,29 @@ th {
 
 i {
   cursor: pointer;
+}
+
+.schedule .header .circle {
+  color: #b6e5ff;
+  font-size: 40px;
+}
+
+.schedule .table {
+  width: 100%;
+}
+
+.table-bordered tr {
+  border-bottom: 2px solid white;
+  height: 75px;
+}
+
+th {
+  vertical-align: middle;
+}
+
+#day-tag {
+  font-size: 50px;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #FFB6C2;
 }
