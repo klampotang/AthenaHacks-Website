@@ -431,9 +431,13 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; }
+  .sponsor-images img {
+      max-width: 200px;
+      padding: 20px;
+      max-height: 100px; }
     .sponsors .sponsor-images img {
       max-width: 200px;
-      padding: 20px; }
+      padding: 20px; } 
   .sponsors .blackstone {
     height: 100px;
     width: 200px;
@@ -530,19 +534,19 @@ body {
     margin-bottom: 30px; }
 
 .footer {
-  min-height: 150px;
+  min-height: 300px;
   padding-top: 60px;
   background-image: linear-gradient(rgba(250, 130, 151, 0), #FA8297);
   text-align: center; }
   .footer p {
     font-size: 18px; }
   .footer .fun-fact {
-    height: 150px;
+    height: 360px;
     margin-bottom: 50px; }
   .footer .social {
     height: 40px;
     line-height: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     padding-top: 10px; }
     .footer .social a {
       color: white;
