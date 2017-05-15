@@ -431,7 +431,12 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; }
-  .sponsor-images img {
+  .footer img {
+      max-width: 200px;
+      padding: 20px;
+      max-height: 100px;}
+
+      .sponsor-images img {
       max-width: 200px;
       padding: 20px;
       max-height: 100px; }
@@ -541,7 +546,7 @@ body {
   .footer p {
     font-size: 18px; }
   .footer .fun-fact {
-    height: 360px;
+    height: 700px;
     margin-bottom: 50px; }
   .footer .social {
     height: 40px;
