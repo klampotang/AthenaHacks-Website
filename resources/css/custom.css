@@ -415,7 +415,7 @@ body {
     font-size: 35px; }
   .sponsors .team {
     text-align: center;
-    margin-bottom: 100px; }
+    margin-bottom: 20px; }
     .sponsors .team .names h1 {
       font-size: 20px;
       margin: 0; }
@@ -424,7 +424,7 @@ body {
       display: inline-block; }
     @media (max-width: 960px) {
       .sponsors .team .person {
-        width: 50%;
+        width: 19%;
         display: inline-block; } }
   .sponsors .sponsor-images {
     display: flex;
@@ -442,7 +442,7 @@ body {
       max-height: 100px; }
     .sponsors .sponsor-images img {
       max-width: 200px;
-      padding: 20px; } 
+      padding: 20px; }
   .sponsors .blackstone {
     height: 100px;
     width: 200px;
@@ -545,9 +545,6 @@ body {
   text-align: center; }
   .footer p {
     font-size: 18px; }
-  .footer .fun-fact {
-    height: 700px;
-    margin-bottom: 50px; }
   .footer .social {
     height: 40px;
     line-height: 40px;
@@ -704,4 +701,8 @@ th,td {
 
 #day-tag {
   font-size: 50px;
+}
+
+.fun-fact {
+  padding-bottom: 15px;
 }
